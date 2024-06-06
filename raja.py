@@ -7,10 +7,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7233561189:AAFPsR759XvF5Flb4ZCg8mw70rSq8hQQqSk')
+bot = telebot.TeleBot('7365501425:AAGA53nM40qhAkjHqSNF6Wph_NTlOXoA8Qo')
 
 # Admin user IDs
-admin_id = ["6805337211","6805337211"]
+admin_id = ["6141252240","6805337211"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -286,7 +286,7 @@ def show_help(message):
 💥 /admincmd : Shows All Admin Commands.
 
 🚀 Buy From :- @RAJA_DDOS
-🚀 Official Channel :- @father_mod
+🚀 Official Channel :- https://t.me/+EihwTlZoAIExNzc1
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -303,7 +303,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''👋🏻Welcome to The Bot, RAJA 💖
                     🤖Feel Free to Explore. 
-                    ✅Join :- @father_mod'''
+                    ✅Join :- https://t.me/+EihwTlZoAIExNzc1'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
